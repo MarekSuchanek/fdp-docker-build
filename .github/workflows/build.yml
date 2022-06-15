@@ -15,7 +15,7 @@ jobs:
         with:
           repository: FAIRDataTeam/FAIRDataPoint
           path: fdp
-          ref: v1.13.0
+          ref: v1.13.1
 
       - name: Check FDP
         run: |
@@ -45,7 +45,7 @@ jobs:
           images: |
             fairdata/fairdatapoint
           tags: |
-            type=raw,value=1.13.0
+            type=raw,value=1.13.1
       
       - name: Build and push (Docker Hub)
         uses: docker/build-push-action@v3
