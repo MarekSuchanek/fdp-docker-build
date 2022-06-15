@@ -57,6 +57,6 @@ jobs:
           context: ${{ github.workspace }}/fdp
           file: ${{ github.workspace }}/fdp/Dockerfile.build
           platforms: linux/amd64,linux/arm64
-          push: false
+          push: true
           tags: ${{ steps.meta-public.outputs.tags }}
           labels: ${{ steps.meta-public.outputs.labels }}
